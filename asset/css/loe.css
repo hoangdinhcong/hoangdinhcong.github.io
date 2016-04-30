@@ -16,6 +16,7 @@ html {
 
 body {
     font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: medium;
 }
 
 header {
@@ -46,6 +47,15 @@ footer {
 .link-muted:hover,
 .link-muted:focus {
     color: #888;
+}
+
+.skill {
+    border: 1px solid #ccc;
+    background-color: #eee;
+    padding: 3px 6px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    margin-right: 2px;
 }
 
 
@@ -84,7 +94,6 @@ footer {
     background-color: transparent;
 }
 
-
 .profile-logo,
 .profile-info {
     border-left: 1px solid #ccc;
@@ -115,13 +124,14 @@ footer {
     padding: 20px 0;
 }
 
-.profile-avatar img {
+.profile-avatar>a>img {
     width: 90px;
     height: 90px;
     border: 1px solid #d6d6d6;
-    padding: 2px;
+    padding: 3px;
     border-radius: 100%;
     display: inline-block;
+    background-color: #fff
 }
 
 .profile-info {
@@ -156,6 +166,7 @@ footer {
 
 .joblist-item {
     margin-bottom: 20px;
+    padding-bottom: 20px;
     font-size: medium;
 }
 
@@ -206,6 +217,7 @@ footer {
         border-top: 1px solid #ccc;
         margin: 0 20px;
         text-align: center;
+        border-radius: 5px;
     }
     .profile-contact {
         display: inline-block;
@@ -221,7 +233,7 @@ footer {
     .nav>li {
         display: inline-block;
     }
-    .nav-pills>li{
+    .nav-pills>li {
         float: none;
     }
 }
