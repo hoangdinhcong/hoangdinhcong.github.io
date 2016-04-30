@@ -1,0 +1,227 @@
+.loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../images/page-loader.gif') 50% 50% no-repeat #fff;
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+header {
+    border-bottom: 1px solid #ddd;
+}
+
+h2,
+h3,
+h4 {
+    font-weight: 400;
+    color: #111;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px 0;
+    border-top: 1px solid #d6d6d6;
+}
+
+.link-nodecoration {
+    text-decoration: none !important;
+}
+
+.link-muted {
+    color: #434;
+}
+
+.link-muted:hover,
+.link-muted:focus {
+    color: #888;
+}
+
+
+/*====================================*/
+
+.page-header {
+    border-bottom: none;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:hover,
+.nav-pills>li.active>a:focus {
+    font-weight: bold;
+    color: #3498db;
+    background-color: transparent;
+}
+
+.nav {
+    padding: 30px 0;
+}
+
+.nav>li>a {
+    padding: 0 15px;
+}
+
+.nav-pills>li>a,
+.profile-logo a {
+    color: #333;
+}
+
+.nav-pills>li>a:hover,
+.nav-pills>li>a:focus,
+.profile-logo a:hover,
+.profile-logo a:focus {
+    color: #3498db;
+    background-color: transparent;
+}
+
+
+.profile-logo,
+.profile-info {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background-color: #f4f4f4;
+}
+
+.profile-logo {
+    padding: 5px;
+    height: inherit;
+    font-family: Yanone Kaffeesatz, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.profile-logo p {
+    margin: 0;
+}
+
+.profile-logo .logo-title {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.profile-logo .logo-subite {
+    font-size: 18px;
+}
+
+.profile-avatar {
+    padding: 20px 0;
+}
+
+.profile-avatar img {
+    width: 90px;
+    height: 90px;
+    border: 1px solid #d6d6d6;
+    padding: 2px;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+.profile-info {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-top: -3px;
+    border-radius: 0 0 5px 5px;
+}
+
+.profile-contact {
+    padding-top: 10px;
+}
+
+.profile-contact .contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-contact .contact-list .contact-item a span {
+    font-size: 24px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.sumary {
+    color: #434;
+}
+
+.joblist h2 {
+    margin: 30px 0;
+}
+
+.joblist-item {
+    margin-bottom: 20px;
+    font-size: medium;
+}
+
+.job-header {
+    border: none;
+    margin-bottom: 20px;
+}
+
+.job-dates {
+    margin: 5px 0 0;
+    color: #888;
+    font-style: italic;
+}
+
+.job-dates dt,
+.job-dates dd {
+    font-weight: 400;
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 3px;
+}
+
+.footer-text {
+    font-size: 13px;
+    color: #aaa;
+    margin: 0;
+}
+
+.hidden-visually {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media (max-width:768px) {
+    .profile-logo {
+        border: none;
+        background-color: #fff;
+    }
+    .profile-info {
+        border-top: 1px solid #ccc;
+        margin: 0 20px;
+        text-align: center;
+    }
+    .profile-contact {
+        display: inline-block;
+        text-align: left;
+    }
+    .footer-text {
+        text-align: center;
+    }
+    .nav {
+        text-align: center;
+        padding: 20px 0;
+    }
+    .nav>li {
+        display: inline-block;
+    }
+    .nav-pills>li{
+        float: none;
+    }
+}
