@@ -1,0 +1,26 @@
+CACHE MANIFEST
+# v1 2016-05-01
+# This is another comment
+http://conghd.xyz/asset/css/bootstrap.min.css
+http://conghd.xyz/asset/css/bootstrap.min.css.map
+http://conghd.xyz/asset/images/page-loader.gif
+
+http://conghd.xyz/asset/js/jquery-2.2.3.min.js
+http://conghd.xyz/asset/js/bootstrap.min.js
+
+http://conghd.xyz/asset/css/ionicons.min.css
+http://conghd.xyz/asset/fonts/ionicons.ttf
+http://conghd.xyz/asset/fonts/ionicons.woff
+
+# Use from network if available
+#NETWORK:
+http://conghd.xyz/favicon.ico
+http://conghd.xyz/asset/css/loe.css
+http://conghd.xyz/asset/images/hdc-min.jpg
+http://conghd.xyz/asset/images/project-watermarking.jpg
+https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700,300
+http://conghd.xyz/asset/js/loaddata.js
+
+# Fallback content
+#FALLBACK:
+#/ fallback.html

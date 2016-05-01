@@ -98,7 +98,7 @@ footer {
 }
 
 .profile-logo,
-.profile-info {
+.profile {
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
     background-color: #f4f4f4;
@@ -138,6 +138,10 @@ footer {
 }
 
 .profile-info {
+
+}
+
+.profile {
     padding: 10px;
     border-bottom: 1px solid #ccc;
     margin-top: -3px;
@@ -215,13 +219,13 @@ footer {
         border: none;
         background-color: #fff;
     }
-    .profile-info {
+    .profile {
         border-top: 1px solid #ccc;
         margin: 0 20px;
         text-align: center;
         border-radius: 5px;
     }
-    .profile-contact {
+    .profile-info {
         display: inline-block;
     }
     .footer-text {
