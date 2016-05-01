@@ -48,6 +48,16 @@ footer {
     margin-right: 2px;
 }
 
+.hidden-visually {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+}
+
 /*====================================*/
 
 #cv,#blog,#project{
@@ -156,12 +166,14 @@ footer {
     margin: 30px 0;
 }
 
+.project-item,
 .joblist-item {
     margin-bottom: 20px;
     padding-bottom: 20px;
     font-size: medium;
 }
 
+.project-header,
 .job-header {
     border: none;
     margin-bottom: 20px;
@@ -187,15 +199,13 @@ footer {
     margin: 0;
 }
 
-.hidden-visually {
-    border: 0 !important;
-    clip: rect(1px, 1px, 1px, 1px) !important;
-    height: 1px !important;
-    overflow: hidden !important;
-    padding: 0 !important;
-    position: absolute !important;
-    width: 1px !important;
+
+/* Project */
+.project-thumbnail{
+    max-width: 80%;
+    margin: auto;
 }
+
 
 
 /* Small devices (tablets, < 768px) */
