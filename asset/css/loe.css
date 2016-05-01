@@ -1,13 +1,3 @@
-.loader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    background: url('../images/page-loader.gif') 50% 50% no-repeat #fff;
-}
-
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -16,7 +6,7 @@ html {
 
 body {
     font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: medium;
+    font-size: 14px;
 }
 
 header {
@@ -58,8 +48,11 @@ footer {
     margin-right: 2px;
 }
 
-
 /*====================================*/
+
+#cv,#blog,#project{
+    font-size: medium;
+}
 
 .page-header {
     border-bottom: none;
@@ -113,7 +106,7 @@ footer {
 
 .profile-logo .logo-title {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 32px;
 }
 
 .profile-logo .logo-subite {
@@ -146,12 +139,11 @@ footer {
 }
 
 .profile-contact .contact-list {
-    list-style: none;
     padding: 0;
 }
 
-.profile-contact .contact-list .contact-item a span {
-    font-size: 24px;
+.profile-contact .contact-list .contact-item>a span {
+    font-size: 20px;
     padding-right: 10px;
     vertical-align: middle;
 }
@@ -206,7 +198,7 @@ footer {
 }
 
 
-/* Small devices (tablets, 768px and up) */
+/* Small devices (tablets, < 768px) */
 
 @media (max-width:768px) {
     .profile-logo {
@@ -221,7 +213,6 @@ footer {
     }
     .profile-contact {
         display: inline-block;
-        text-align: left;
     }
     .footer-text {
         text-align: center;
