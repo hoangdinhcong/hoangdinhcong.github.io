@@ -1,0 +1,27 @@
+[
+  {
+    "url": "#",
+    "text": "+84 169 573 6655",
+    "icon": "ion-ios-telephone"
+  },
+  {
+    "url": "mailto:hodico.iam@gmail.com",
+    "text": "hodico.iam@gmail.com",
+    "icon": "ion-ios-email"
+  },
+  {
+    "url": "#",
+    "text": "hodico.iam@gmail.com",
+    "icon": "ion-social-skype"
+  },
+  {
+    "url": "https://www.linkedin.com/in/hoang-cong-70a992b1",
+    "text": "in/hoang-cong",
+    "icon": "ion-social-linkedin"
+  },
+  {
+    "url": "https://github.com/MrHDC",
+    "text": "/MrHDC",
+    "icon": "ion-social-github"
+  }
+]
