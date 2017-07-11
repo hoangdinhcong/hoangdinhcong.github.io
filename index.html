@@ -42,6 +42,8 @@
 
 <body>
 <div class="loader" style="display: none;"></div>
+<div ng-app="myApp" ng-controller="myCtrl">
+</div>
 <header>
     <div class="container">
         <div class="row">
@@ -320,6 +322,17 @@
 <script>
     $(window).load(function () {
         $(".loader").fadeOut("slow");
+    });
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function($scope, $http) {
+        // $http.get("http://5950c0432b4e59001165027c.mockapi.io/api/users")
+        $http.get('/asset/data/info.json')        
+        .then(function(response) {
+            console.log(response);
+        });
     });
 </script>
 </body>
