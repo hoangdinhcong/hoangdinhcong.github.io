@@ -1,339 +1,325 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Hoang Cong | cv</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <style>
-        .loader {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 9999;
-            background: url('asset/images/page-loader.gif') 50% 50% no-repeat #fff;
-        }
-    </style>
-    <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="asset/css/ionicons.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700,300" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="asset/css/style.css">
-    <!--    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
-        <script>
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function () {
-                            (i[r].q = i[r].q || []).push(arguments)
-                        }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                        m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+<html class="no-js" lang="en">
 
-            ga('create', 'UA-70345454-3', 'auto');
-            ga('send', 'pageview');
-        </script>-->
+<head>
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine & Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="description" content="Hoang Dinh Cong&quot;s resume">
+    <meta name="keywords" content="responsive, grid, system, web design">
+    <meta name="author" content="hoangdinhcong.github.io">
+    <meta http-equiv="cleartype" content="on">
+    <!--<link rel="shortcut icon" href="/favicon.ico"> -->
+
+    <!-- Responsive and mobile friendly stuff -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>Hoang Cong | cv</title>
+
+    <!-- Stylesheets  -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="asset/css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700|Yanone+Kaffeesatz:400,700&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="asset/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 
 <body>
-<div class="loader" style="display: none;"></div>
-<div ng-app="myApp" ng-controller="myCtrl">
-</div>
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-4">
-                <div class="profile-logo">
-                    <a href="/" class="text-center link-nodecoration">
-                        <p class="logo-title">Hoang Dinh Cong</p>
-                        <p class="logo-subite">full stack developer</p>
-                    </a>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-4">
+                    <div class="profile-logo">
+                        <a href="/" class="text-center link-nodecoration">
+                            <p class="logo-title">Hoang Dinh Cong</p>
+                            <p class="logo-subite">full stack developer</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-9 col-sm-8">
+                    <ul class="nav nav-pills navbar-right">
+                        <li class="active"><a class="text-lowercase" href="index.html">cv</a></li>
+                        <li><a class="text-lowercase" href="blog.html">blog</a></li>
+                        <li><a class="text-lowercase" href="project.html">project</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-9 col-sm-8">
-                <ul class="nav nav-pills navbar-right">
-                    <li class="active"><a class="text-lowercase" href="index.html">cv</a></li>
-                    <!-- <li><a class="text-lowercase" href="blog.html">blog</a></li> -->
-                    <li><a class="text-lowercase" href="project.html">project</a></li>
-                </ul>
-            </div>
         </div>
-    </div>
-</header>
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9 col-md-push-3 col-sm-8 col-sm-push-4">
-                <div id="cv">
-                    <div class="page-header">
-                        <h1>CV</h1>
-                    </div>
-                    <p class="summary lead">I've been building websites for over two years.
-                        I want to build systems that are highly valuable to the user.
-                        I'm passionate about the latest web technologies and writing great code.</p>
-                    <!-- employment -->
-                    <hr>
-                    <div class="joblist" id="cv-employment">
-                        <h2>Work Experience</h2>
-                        <div class="joblist-item">
-                            <header class="job-header">
-                                <h3 class="job-title"><a href="http://www.fis.com.vn/" class="job-url company-url">FPT
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-md-push-3 col-sm-8 col-sm-push-4">
+                    <div id="cv">
+                        <div class="page-header">
+                            <h1>CV</h1>
+                        </div>
+                        <p class="summary lead">I've been building websites for over two years. I want to build systems that are highly valuable
+                            to the user. I'm passionate about the latest web technologies and writing great code.</p>
+                        <!-- employment -->
+                        <hr>
+                        <div class="joblist" id="cv-employment">
+                            <h2>Work Experience</h2>
+                            <div class="joblist-item">
+                                <header class="job-header">
+                                    <h3 class="job-title"><a href="http://www.fis.com.vn/" class="job-url company-url">FPT
                                     Infomation System</a>
-                                    <small class="job-role">- Full Stack Developers</small>
-                                </h3>
-                                <dl class="job-dates">
-                                    <dt class="hidden-visually">From</dt>
-                                    <dd>
-                                        <time class="dtstart">May 2016</time>
-                                    </dd>
-                                    <dt class="text-lowercase">To</dt>
-                                    <dd>
-                                        <time class="dtend">April 2017</time>
-                                    </dd>
-                                </dl>
-                            </header>
-                            <div class="job-summary">
-                                <p>
-                                    Develop and optimize the proprietary issue tracking system named <a href="#">EPMS</a>. System for FPT customers. The system is based on
-                                    <a href="https://www.atlassian.com/software/jira">Jira</a> API, C # and javascript.
-                                </p>
-                                <p>
-                                    Maintenance and repair of <a href="http://muasamcong.mpi.gov.vn/">National bidding system</a>. Use JSP-Servlet and javascript.
-                                </p>
+                                        <small class="job-role">- Full Stack Developers</small>
+                                    </h3>
+                                    <dl class="job-dates">
+                                        <dt class="hidden-visually">From</dt>
+                                        <dd>
+                                            <time class="dtstart">May 2016</time>
+                                        </dd>
+                                        <dt class="text-lowercase">To</dt>
+                                        <dd>
+                                            <time class="dtend">April 2017</time>
+                                        </dd>
+                                    </dl>
+                                </header>
+                                <div class="job-summary">
+                                    <p>
+                                        Develop and optimize the proprietary issue tracking system named <a href="#">EPMS</a>.
+                                        System for FPT customers. The system is based on
+                                        <a href="https://www.atlassian.com/software/jira">Jira</a> API, <code>ASP.NET MVC 5</code> and <code>javascript</code>.
+                                    </p>
+                                    <p>
+                                        Maintenance <a href="http://muasamcong.mpi.gov.vn/">National bidding system</a>.
+                                        Use <code>JSP-Servlet</code> and <code>javascript</code>.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="joblist-item">
+                                <header class="job-header">
+                                    <h3 class="job-title"><a href="http://tinhvan.vn/" class="job-url company-url">Tinh Van
+                                    Group</a> (intern-contributors)
+                                        <small class="job-role">- Full Stack Developers</small>
+                                    </h3>
+                                    <dl class="job-dates">
+                                        <dt class="hidden-visually">From</dt>
+                                        <dd>
+                                            <time class="dtstart">October 2014</time>
+                                        </dd>
+                                        <dt class="text-lowercase">To</dt>
+                                        <dd>
+                                            <time class="dtend">October 2015</time>
+                                        </dd>
+                                    </dl>
+                                </header>
+                                <div class="job-summary">
+                                    <p>
+                                        <a href="project.html#okr">OKRs</a> is the internal project of the Tinh Van Group,
+                                        the application manage the goals based on OKRs (Objectives and Key Results) of google,
+                                        apply to the departments and specific individuals in the group.
+                                    </p>
+                                    <p>
+                                        Re-built the <a href="project.html#cc">CC</a> web app to match a new design and developed
+                                        various modular components. Use webcam to timekeeping for employees. CC was developed
+                                        and circulated internally. Using <code>spring mvc</code>
+                                    </p>
+                                    <p>
+                                        Maintain and develop the <a href="http://classbook.vn/"> Classbook Desktop App </a> software, using winform.
+                                    </p>
+                                    <p>
+                                        Use <code>phonegap</code>, <code>sqlite</code>, <code>CEFSharp</code> to do external testing sofware <a href="http://classbook.vn/">Quiz Classbook</a>                                        for <a href="http://classbook.vn/"> Classbook Desktop App </a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="joblist-item">
-                            <header class="job-header">
-                                <h3 class="job-title"><a href="http://tinhvan.vn/" class="job-url company-url">Tinh Van
-                                    Group</a> (intern-contributors)
-                                    <small class="job-role">- Full Stack Developers</small>
-                                </h3>
-                                <dl class="job-dates">
-                                    <dt class="hidden-visually">From</dt>
-                                    <dd>
-                                        <time class="dtstart">October 2014</time>
-                                    </dd>
-                                    <dt class="text-lowercase">To</dt>
-                                    <dd>
-                                        <time class="dtend">October 2015</time>
-                                    </dd>
-                                </dl>
-                            </header>
-                            <div class="job-summary">
-                                 <p>
-                                     <a href="project.html#okr">OKRs</a> is the internal project of the Tinh Van Group, the application manage the goals based on OKRs (Objectives and Key Results) of google, apply to the departments and specific individuals in the group.
-                                 </p>
-                                <p>
-                                    Re-built the <a href="project.html#cc">CC</a> web app to match a new design and developed various modular components. Use webcam to timekeeping for employees. CC was developed and circulated internally.
-                                </p>
-                                <p>
-                                    Maintain and develop the <a href="http://classbook.vn/"> Classbook Desktop App </a> software, using winform.
-                                </p>
-                                <p>
-                                    Use phonegap, sqlite, CEFSharp to do external testing sofware <a href="http://classbook.vn/">Quiz Classbook</a> for <a href="http://classbook.vn/"> Classbook Desktop App </a>
-                                </p>
+                        <!-- education -->
+                        <hr>
+                        <div class="joblist" id="cv-education">
+                            <h2>Education</h2>
+                            <div class="joblist-item">
+                                <header class="job-header">
+                                    <h3 class="job-title" id="#fithou">
+                                        <a href="http://fithou.edu.vn/" class="job-url company-url">Hanoi Open
+                                        University</a>
+                                        <small class="job-role">- Faculty of Information Technology</small>
+                                    </h3>
+                                    <dl class="job-dates">
+                                        <dt class="hidden-visually">From</dt>
+                                        <dd>
+                                            <time class="dtstart">September 2012</time>
+                                        </dd>
+                                        <dt class="text-lowercase">To</dt>
+                                        <dd>
+                                            May 2016
+                                        </dd>
+                                    </dl>
+                                </header>
+                                <div class="job-summary">
+                                    <h4>Achievements</h4>
+                                    <ul>
+                                        <li>Third prize in the Student Scientific Conference FITHOU</li>
+                                        <li>Second prize in the competition of informatics and english HOU</li>
+                                    </ul>
+                                </div>
                             </div>
+                        </div>
+                        <!-- skill-->
+                        <hr>
+                        <div class="joblist" id="cv-skill">
+                            <h2>Current Skill</h2>
+                            <p class="text-lead">A selection of my recent experience in commercial and personal projects:
+                            </p>
+                            <h3>Front-End</h3>
+                            <ul class="list-inline list-unstyled">
+                                <li class="skill">Bootstrap</li>
+                                <li class="skill">Angular2</li>
+                                <li class="skill">Typescript</li>
+                                <li class="skill">jQuery</li>
+                            </ul>
+                            <h3>Back-End</h3>
+                            <ul class="list-inline list-unstyled">
+                                <li class="skill">java</li>
+                                <li class="skill">c#</li>
+                            </ul>
+                            <h3>Database</h3>
+                            <ul class="list-inline list-unstyled">
+                                <li class="skill">Sql Server</li>
+                                <li class="skill">MySQL</li>
+                                <li class="skill">Redis</li>
+                            </ul>
+                            <h3>Technology &amp; Technical &amp; Architecting</h3>
+                            <ul class="list-inline list-unstyled">
+                                <li class="skill">Web development</li>
+                                <li class="skill">Design Patterns</li>
+                                <li class="skill">Restful API</li>
+                                <li class="skill">MVC</li>
+                                <li class="skill">OOP</li>
+                                <li class="skill">SOA</li>
+                                <li class="skill">3 tier</li>
+                            </ul>
+                            <h3>Other Skill</h3>
+                            <ul>
+                                <li>English
+                                    <small class="text-muted">(good)</small>
+                                </li>
+                                <li>Teamwork
+                                    <small class="text-muted">(good)</small>
+                                </li>
+                                <li>Design
+                                    <small class="text-muted">(Photoshop, AI, Premiere )</small>
+                                </li>
+                                <li>Scrum
+                                    <small class="text-muted">(good)</small>
+                                </li>
+                                <li>Microsoft Office
+                                    <small class="text-muted">(Word, Excel, Powerpoint, Outlook, Note, Access)</small>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- personal project -->
+                        <hr>
+                        <div class="joblist" id="cv-project">
+                            <h2>Personal Project</h2>
+                            <p><a href="project.html#goldenhands">Goldenhands</a>, <a href="http://dtaudio.com.vn/">dtaudio</a> is my freelance contract with my team.</p>
+                            <p><a href="project.html#meotrics">Meotrics</a> is the a small startup. My responsibility is building
+                                the landing page</p>
+                        </div>
+                        <!-- interests -->
+                        <hr>
+                        <div class="joblist" id="cv-interest">
+                            <h2>Interest</h2>
+                            <p>I always wanted to create something useful for me and everyone. Besides, I also love sports,
+                                especially football and basketball.</p>
+                            <p>I like to participate in outdoor activities and "phượt".</p>
+                            <p>I'm always curious and find out how the things work.</p>
+                            <p>I loved music. I'm self-taught guitar at home.</p>
                         </div>
                     </div>
-                    <!-- education -->
-                    <hr>
-                    <div class="joblist" id="cv-education">
-                        <h2>Education</h2>
-                        <div class="joblist-item">
-                            <header class="job-header">
-                                <h3 class="job-title" id="#fithou">
-                                    <a href="http://fithou.edu.vn/" class="job-url company-url">Hanoi Open
-                                        University</a>
-                                    <small class="job-role">- Faculty of Information Technology</small>
-                                </h3>
-                                <dl class="job-dates">
-                                    <dt class="hidden-visually">From</dt>
-                                    <dd>
-                                        <time class="dtstart">September 2012</time>
-                                    </dd>
-                                    <dt class="text-lowercase">To</dt>
-                                    <dd>
-                                        May 2016
-                                    </dd>
-                                </dl>
-                            </header>
-                            <div class="job-summary">
-                                <h4>Achievements</h4>
-                                <ul>
-                                    <li>Third prize in the Student Scientific Conference FITHOU</li>
-                                    <li>Second prize in the competition of informatics and english HOU</li>
+                </div>
+                <div class="col-md-3 col-md-pull-9 col-sm-4 col-sm-pull-8">
+                    <div class="profile">
+                        <div class="profile-avatar text-center">
+                            <a href="asset/images/hdc.jpg">
+                            <img src="asset/images/hdc-min.jpg" alt="hdc" class="img-responsive">
+                        </a>
+                        </div>
+                        <div class="profile-info text-left">
+                            <div class="profile-introduce">
+                                <h4 class="profile-header">About me</h4>
+                                <ul class="list-unstyled">
+                                    <li class="link-muted">Name: Hoang Dinh Cong</li>
+                                    <li class="link-muted">Age: 23</li>
+                                    <li class="link-muted">Address: Ha Noi</li>
+                                </ul>
+                            </div>
+                            <div class="profile-contact">
+                                <h4 class="profile-header">Get in touch</h4>
+                                <ul class="contact-list list-unstyled">
+                                    <li class="contact-item">
+                                        <a href="#" class="link-nodecoration link-muted">
+                                        <span class="ion-ios-telephone"></span>+84 169 573 6655
+                                    </a>
+                                    </li>
+                                    <li class="contact-item">
+                                        <a href="mailto:conghd2709@gmail.com" class="link-nodecoration link-muted">
+                                        <span class="ion-ios-email"></span>conghd2709@gmail.com
+                                    </a>
+                                    </li>
+                                    <li class="contact-item">
+                                        <a href="#" class="link-nodecoration link-muted">
+                                        <span class="ion-social-skype"></span>conghd2709@gmail.com
+                                    </a>
+                                    </li>
+                                    <li class="contact-item">
+                                        <a href="https://www.linkedin.com/in/hoang-cong-70a992b1" class="link-nodecoration link-muted">
+                                        <span class="ion-social-linkedin"></span>in/hoang-cong
+                                    </a>
+                                    </li>
+                                    <li class="contact-item">
+                                        <a href="https://github.com/hoangdinhcong" class="link-nodecoration link-muted">
+                                        <span class="ion-social-github"></span>/hoangdinhcong
+                                    </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <!-- skill-->
-                    <hr>
-                    <div class="joblist" id="cv-skill">
-                        <h2>Current Skill</h2>
-                        <p class="text-lead">A selection of my recent experience in commercial and personal
-                            projects:</p>
-                        <h3>Front End</h3>
-                        <ul class="list-inline list-unstyled">
-                            <li class="skill">Bootstrap</li>
-                            <li class="skill">Angular2</li>
-                            <li class="skill">Typescript</li>
-                            <li class="skill">jQuery</li>
-                        </ul>
-                        <h3>Back End</h3>
-                        <ul class="list-inline list-unstyled">
-                            <li class="skill">java</li>
-                            <li class="skill">php</li>
-                            <li class="skill">c#</li>
-
-                            <li class="skill">yii2</li>
-                            <li class="skill">spring</li>
-                            <li class="skill">ado.net</li>
-                        </ul>
-                        <h3>Database</h3>
-                        <ul class="list-inline list-unstyled">
-                            <li class="skill">Sql Server</li>
-                            <li class="skill">mysql</li>
-                            <li class="skill">postgresql</li>
-                            <li class="skill">redis</li>
-                        </ul>
-                        <h3>Technology &amp; Technical &amp; Architecting</h3>
-                        <ul class="list-inline list-unstyled">
-                            <li class="skill">Web development</li>
-                            <li class="skill">Android</li>
-                            <li class="skill">Design Patterns</li>
-                            <li class="skill">Restful API</li>
-                            <li class="skill">MVC</li>
-                            <li class="skill">OOP</li>
-                            <li class="skill">SOA</li>
-                            <li class="skill">3 tier</li>
-                        </ul>
-                        <h3>Other Skill</h3>
-                        <ul>
-                            <li>English
-                                <small class="text-muted">(good)</small>
-                            </li>
-                            <li>Teamwork
-                                <small class="text-muted">(good)</small>
-                            </li>
-                            <li>Design
-                                <small class="text-muted">(Photoshop, AI, Premiere )</small>
-                            </li>
-                            <li>Scrum
-                                <small class="text-muted">(good)</small>
-                            </li>
-                            <li>Microsoft Office
-                                <small class="text-muted">(Word, Excel, Powerpoint, Outlook, Note, Access)</small>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- personal project -->
-                    <hr>
-                    <div class="joblist" id="cv-project">
-                        <h2>Personal Project</h2>
-                        <p><a href="project.html#goldenhands">Goldenhands</a> is my freelance contract with my team.</p>
-                        <p><a href="project.html#meotrics">Meotrics</a> is the a small startup. My responsibility is
-                            building the landing page</p>
-                    </div>
-                    <!-- interests -->
-                    <hr>
-                    <div class="joblist" id="cv-interest">
-                        <h2>Interest</h2>
-                        <p>I always wanted to create something useful for me and everyone.
-                            Besides, I also love sports, especially football and basketball.</p>
-                        <p>I like to participate in outdoor activities and "phượt".</p>
-                        <p>I'm always curious and find out how the things work.</p>
-                        <p>I loved music. I'm self-taught guitar at home.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-md-pull-9 col-sm-4 col-sm-pull-8">
-                <div class="profile">
-                    <div class="profile-avatar text-center">
-                        <a href="asset/images/hdc.jpg">
-                            <img src="asset/images/hdc-min.jpg" alt="hdc" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="profile-info text-left">
-                        <div class="profile-introduce">
-                            <h4 class="profile-header">About me</h4>
-                            <ul class="list-unstyled">
-                                <li class="link-muted">Name: Hoang Dinh Cong</li>
-                                <li class="link-muted">Age: 23</li>
-                                <li class="link-muted">Address: Ha Noi</li>
-                            </ul>
-                        </div>
-                        <div class="profile-contact">
-                            <h4 class="profile-header">Get in touch</h4>
-                            <ul class="contact-list list-unstyled">
-                                <li class="contact-item">
-                                    <a href="#" class="link-nodecoration link-muted">
-                                        <span class="ion-ios-telephone"></span>+84 169 573 6655
-                                    </a>
-                                </li>
-                                <li class="contact-item">
-                                    <a href="mailto:conghd2709@gmail.com" class="link-nodecoration link-muted">
-                                        <span class="ion-ios-email"></span>conghd2709@gmail.com
-                                    </a>
-                                </li>
-                                <li class="contact-item">
-                                    <a href="#" class="link-nodecoration link-muted">
-                                        <span class="ion-social-skype"></span>conghd2709@gmail.com
-                                    </a>
-                                </li>
-                                <li class="contact-item">
-                                    <a href="https://www.linkedin.com/in/hoang-cong-70a992b1" class="link-nodecoration link-muted">
-                                        <span class="ion-social-linkedin"></span>in/hoang-cong
-                                    </a>
-                                </li>
-                                <li class="contact-item">
-                                    <a href="https://github.com/hoangdinhcong" class="link-nodecoration link-muted">
-                                        <span class="ion-social-github"></span>/hoangdinhcong
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9 col-md-push-3 col-sm-8 col-sm-push-4">
-                <p class="footer-text">
-                    Hoang Dinh Cong 2016 • Fullstack Developer •
-                    <a href="https://github.com/hoangdinhcong" class="link-muted link-nodecoration">
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-md-push-3 col-sm-8 col-sm-push-4">
+                    <p class="footer-text">
+                        Hoang Dinh Cong 2016 • Fullstack Developer •
+                        <a href="https://github.com/hoangdinhcong" class="link-muted link-nodecoration">
                         <abbr title="Github">GitHub</abbr>
                     </a>
-                </p>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-<script src="asset/js/jquery-2.2.3.min.js"></script>
-<script src="asset/js/bootstrap.min.js"></script>
-<script>
-    $(window).load(function () {
-        $(".loader").fadeOut("slow");
-    });
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-<script>
-    var app = angular.module('myApp', []);
-    app.controller('myCtrl', function($scope, $http) {
-        // $http.get("http://5950c0432b4e59001165027c.mockapi.io/api/users")
-        $http.get('/asset/data/info.json')        
-        .then(function(response) {
-            console.log(response);
-        });
-    });
-</script>
+    </footer>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-70345454-4', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script src="asset/js/jquery-2.2.3.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
 </body>
+
 </html>
