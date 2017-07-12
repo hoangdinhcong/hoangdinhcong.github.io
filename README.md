@@ -1,2 +1,2 @@
-# Cong Hoang
-my personal cv, inspired by simon smith
+# Cong Hoang Résumé
+My personal cv, inspired by simon smith
