@@ -6,111 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Hoang Cong | cv</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="asset/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700|Yanone+Kaffeesatz:400,700&amp;subset=vietnamese" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="asset/css/style.css">
 </head>
 
 <body ng-app="myApp">
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-4">
-                    <div class="profile-logo">
-                        <a href="/" class="text-center link-nodecoration">
-                            <p class="logo-title">Hoang Dinh Cong</p>
-                            <p class="logo-subite">full stack developer</p>
-                        </a>
+    <div ng-controller="myCtrl">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4">
+                        <div class="profile-logo">
+                            <a href="/" class="text-center link-nodecoration">
+                                <p class="logo-title">Hoang Dinh Cong</p>
+                                <p class="logo-subite">full stack developer</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-8">
+                        <ul class="nav nav-pills navbar-right">
+                            <li ng-class="{active: isActive('/')}">
+                                <a class="text-lowercase" href="#!">cv</a>
+                            </li>
+                            <li ng-class="{active: isActive('/blogs')}">
+                                <a class="text-lowercase" href="#!blogs">blog</a>
+                            </li>
+                            <li ng-class="{active: isActive('/projects')}">
+                                <a class="text-lowercase" href="#!projects">project</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-9 col-sm-8">
-                    <ul class="nav nav-pills navbar-right">
-                        <li class="active"><a class="text-lowercase" href="#">cv</a></li>
-                         <li><a class="text-lowercase" href="#blogs">blog</a></li> 
-                        <li><a class="text-lowercase" href="#projects">project</a></li>
-                    </ul>
-                </div>
             </div>
-        </div>
-    </header>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9 col-md-push-3 col-sm-8 col-sm-push-4">
-                    <ng-view></ng-view>
-                </div>
-                <div class="col-md-3 col-md-pull-9 col-sm-4 col-sm-pull-8">
-                    <div class="profile">
-                        <div class="profile-avatar text-center">
-                            <a href="asset/images/hdc.jpg">
+        </header>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-md-push-3 col-sm-8 col-sm-push-4">
+                        <ng-view></ng-view>
+                    </div>
+                    <div class="col-md-3 col-md-pull-9 col-sm-4 col-sm-pull-8">
+                        <div class="profile">
+                            <div class="profile-avatar text-center">
+                                <a href="asset/images/hdc.jpg">
                             <img src="asset/images/hdc-min.jpg" alt="hdc" class="img-responsive">
                         </a>
-                        </div>
-                        <div class="profile-info text-left">
-                            <div class="profile-introduce">
-                                <h4 class="profile-header">About me</h4>
-                                <ul class="list-unstyled">
-                                    <li class="link-muted">Name: Hoang Dinh Cong</li>
-                                    <li class="link-muted">Age: 23</li>
-                                    <li class="link-muted">Address: Ha Noi</li>
-                                </ul>
                             </div>
-                            <div class="profile-contact">
-                                <h4 class="profile-header">Get in touch</h4>
-                                <ul class="contact-list list-unstyled">
-                                    <li class="contact-item">
-                                        <a href="#" class="link-nodecoration link-muted">
+                            <div class="profile-info text-left">
+                                <div class="profile-introduce">
+                                    <h4 class="profile-header">About me</h4>
+                                    <ul class="list-unstyled">
+                                        <li class="link-muted">Name: Hoang Dinh Cong</li>
+                                        <li class="link-muted">Age: 23</li>
+                                        <li class="link-muted">Address: Ha Noi</li>
+                                    </ul>
+                                </div>
+                                <div class="profile-contact">
+                                    <h4 class="profile-header">Get in touch</h4>
+                                    <ul class="contact-list list-unstyled">
+                                        <li class="contact-item">
+                                            <a href="#" class="link-nodecoration link-muted">
                                         <span class="ion-ios-telephone"></span>+84 169 573 6655
                                     </a>
-                                    </li>
-                                    <li class="contact-item">
-                                        <a href="mailto:conghd2709@gmail.com" class="link-nodecoration link-muted">
+                                        </li>
+                                        <li class="contact-item">
+                                            <a href="mailto:conghd2709@gmail.com" class="link-nodecoration link-muted">
                                         <span class="ion-ios-email"></span>conghd2709@gmail.com
                                     </a>
-                                    </li>
-                                    <li class="contact-item">
-                                        <a href="#" class="link-nodecoration link-muted">
+                                        </li>
+                                        <li class="contact-item">
+                                            <a href="#" class="link-nodecoration link-muted">
                                         <span class="ion-social-skype"></span>conghd2709@gmail.com
                                     </a>
-                                    </li>
-                                    <li class="contact-item">
-                                        <a href="https://www.linkedin.com/in/hoang-cong-70a992b1" class="link-nodecoration link-muted">
+                                        </li>
+                                        <li class="contact-item">
+                                            <a href="https://www.linkedin.com/in/hoang-cong-70a992b1" class="link-nodecoration link-muted">
                                         <span class="ion-social-linkedin"></span>in/hoang-cong
                                     </a>
-                                    </li>
-                                    <li class="contact-item">
-                                        <a href="https://github.com/hoangdinhcong" class="link-nodecoration link-muted">
+                                        </li>
+                                        <li class="contact-item">
+                                            <a href="https://github.com/hoangdinhcong" class="link-nodecoration link-muted">
                                         <span class="ion-social-github"></span>/hoangdinhcong
                                     </a>
-                                    </li>
-                                </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9 col-md-push-3 col-sm-8 col-sm-push-4">
-                    <p class="footer-text">
-                        Hoang Dinh Cong 2016 • Fullstack Developer •
-                        <a href="https://github.com/hoangdinhcong" class="link-muted link-nodecoration">
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-md-push-3 col-sm-8 col-sm-push-4">
+                        <p class="footer-text">
+                            Hoang Dinh Cong 2016 • Fullstack Developer •
+                            <a href="https://github.com/hoangdinhcong" class="link-muted link-nodecoration">
                         <abbr title="Github">GitHub</abbr>
                     </a>
-                    </p>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-route.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.angularjs.org/1.2.25/angular-sanitize.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
     <script src="src/app.module.js"></script>
     <script src="src/app.config.js"></script>
 </body>

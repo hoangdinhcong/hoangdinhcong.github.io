@@ -1,4 +1,36 @@
 {
     "name":"Hoang Dinh Cong",
-    "age": 23
+    "age": 23,
+    "workExperience" : [
+        {
+            "company" :{
+                "name" : "FPT Infomation System",
+                "link": "http://www.fis.com.vn/"
+            },
+            "role" :{
+                "name" : "Full Stack Developers",
+                "type": ""
+            },
+            "time" :{
+                "from" : "May 2016",
+                "to": "April 2017"
+            },
+            "summary" : "&lt;p&gt; Develop and optimize the proprietary issue tracking system named &lt;a href=&quot;#&quot;&gt;EPMS&lt;/a&gt;. System for FPT customers. The system is based on &lt;a href=&quot;https://www.atlassian.com/software/jira&quot;&gt;Jira&lt;/a&gt; API, C # and javascript. &lt;/p&gt; &lt;p&gt; Maintenance and repair of &lt;a href=&quot;http://muasamcong.mpi.gov.vn/&quot;&gt;National bidding system&lt;/a&gt;. Use JSP-Servlet and javascript. &lt;/p&gt;"
+        },
+        {
+            "company" :{
+                "name" : "Tinh Van Group",
+                "link": "http://tinhvan.vn/"
+            },
+            "role" :{
+                "name" : "Full Stack Developers",
+                "type": "(intern-contributors)"
+            },
+            "time" :{
+                "from" : "October 2014",
+                "to": "October 2015"
+            },
+            "summary" : "&lt;p&gt; &lt;a href=&quot;project.html#okr&quot;&gt;OKRs&lt;/a&gt; is the internal project of the Tinh Van Group, the application manage the goals based on OKRs (Objectives and Key Results) of google, apply to the departments and specific individuals in the group. &lt;/p&gt; &lt;p&gt; Re-built the &lt;a href=&quot;project.html#cc&quot;&gt;CC&lt;/a&gt; web app to match a new design and developed various modular components. Use webcam to timekeeping for employees. CC was developed and circulated internally. &lt;/p&gt; &lt;p&gt; Maintain and develop the &lt;a href=&quot;http://classbook.vn/&quot;&gt; Classbook Desktop App &lt;/a&gt; software, using winform. &lt;/p&gt; &lt;p&gt; Use phonegap, sqlite, CEFSharp to do external testing sofware &lt;a href=&quot;http://classbook.vn/&quot;&gt;Quiz Classbook&lt;/a&gt; for &lt;a href=&quot;http://classbook.vn/&quot;&gt; Classbook Desktop App &lt;/a&gt; &lt;/p&gt;"
+        }
+    ]
 }

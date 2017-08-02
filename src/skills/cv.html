@@ -5,6 +5,34 @@
     <p class="summary lead">I've been building websites for over two years. I want to build systems that are highly valuable to the user. I'm passionate
         about the latest web technologies and writing great code.</p>
     <!-- employment -->
+
+    <hr>
+    <div class="joblist" id="cv-employment">
+        <h2>Work Experience</h2>
+        <div class="joblist-item" ng-repeat="work in info.workExperience">
+            <header class="job-header">
+                <h3 class="job-title">
+                    <a href="{{work.company.title}}" class="job-url company-url">{{work.company.name}}</a>
+                    {{work.role.type}}
+                    <small class="job-role">- {{work.role.name}}</small>
+                </h3>
+                <dl class="job-dates">
+                    <dt class="hidden-visually">From</dt>
+                    <dd>
+                        <time class="dtstart">{{work.time.from}}</time>
+                    </dd>
+                    <dt class="text-lowercase">To</dt>
+                    <dd>
+                        <time class="dtend">{{work.time.to}}</time>
+                    </dd>
+                </dl>
+            </header>
+            <div class="job-summary" ng-bind-html="work.summary | to_trusted">
+                
+            </div>
+        </div>
+    </div>
+<!--
     <hr>
     <div class="joblist" id="cv-employment">
         <h2>Work Experience</h2>
@@ -73,6 +101,7 @@
             </div>
         </div>
     </div>
+--> 
     <!-- education -->
     <hr>
     <div class="joblist" id="cv-education">

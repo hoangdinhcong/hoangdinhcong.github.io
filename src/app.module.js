@@ -1,39 +1,26 @@
 'use strict';
 
 var app = angular.module('myApp', [
-    'ngRoute'
+    'ngRoute',
+    'ngSanitize'
 ]);
 
+app.filter('to_trusted', ['$sce', function ($sce) {
+    return function (text) {
+        return $sce.trustAsHtml(text);
+    };
+}]);
 
-app.controller('cvController', function ($scope, $http) {
-    // $http.get('../asset/data/info.json')
-    //     .then(function (response) {
-    //         console.log(response);
-    //     });
-})
-.controller('blogController', function ($scope) {
-    console.log('blogController');
-})
-.controller('projectController', function ($scope) {
-    console.log('projectController');
+app.controller('myCtrl', function ($scope, $http, $location) {
+
+    $scope.info = {};
+
+    $http.get('../asset/data/info.json')
+        .then(function (response) {
+            $scope.info = response.data;
+        });
+
+    $scope.isActive = function (route) {
+        return route == $location.path();
+    }
 });
-
-app.config(function($locationProvider, $routeProvider) {
-
-    $locationProvider.hashPrefix('!');
-
-    $routeProvider
-    .when("/", {
-        templateUrl : "../src/skills/cv.html",
-        controller: "cvController"
-    })
-    .when("/blogs", {
-        templateUrl : "../src/blogs/blogs.html",
-        controller: "blogController"
-    })
-    .when("/projects", {
-        templateUrl : "../src/projects/projects.html",
-        controller: "projectController"
-    });
-});
-
