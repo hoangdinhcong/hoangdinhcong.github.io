@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Arvo:400,700&display=swap");
+
+/* 
+===================== */
+html {
+  line-height: 1.25;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* 
+===================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arvo, serif;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #111;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+a {
+  color: #a63a50;
+}
+
+li,
+p {
+  line-height: 1.7;
+}
+
+.list-reset {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.list-none {
+  list-style-type: none !important;
+}
+
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+
+.hidden-visually {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 720px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media screen {
+  .hidden-screen {
+    display: none;
+  }
+}
+
+@media print {
+  .container {
+    max-width: 100%;
+  }
+  .hidden-print {
+    display: none !important;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  * {
+    font-style: normal;
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .brand {
+    margin-bottom: 0.8rem;
+  }
+
+  .header-container {
+    flex-direction: column;
+  }
+}
+
+/* 
+======================= */
+body {
+  font-family: Merriweather, serif;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #414141;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+====================== */
+.header-wrapper {
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #eee;
+}
+
+.header-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.header-content header {
+  font-family: "Arvo", serif;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand > a.brand-link {
+  font-size: 1.6rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar-nav {
+  display: flex;
+  font-size: 1.1rem;
+  text-transform: lowercase;
+}
+.navbar-nav li + li {
+  margin-left: 1rem;
+}
+.navbar-nav a {
+  text-decoration: none;
+}
+
+/* 
+================= */
+.title {
+  margin-bottom: 0;
+}
+
+.title span {
+  font-size: 0.75em;
+  display: block;
+  color: #444;
+}
+.timeline {
+  display: flex;
+  font-size: 0.85rem;
+  margin-top: 0;
+}
+.timeline dd {
+  margin: 0;
+}
+.timeline .to {
+  margin: 0 0.3em;
+}
+
+/* 
+================== */
+.skills {
+  margin-top: 2.2rem;
+}
+.skill + .skill {
+  margin-top: 0.2rem;
+}
+
+.skill-tag {
+  border: 1px solid #a63a50;
+  background-color: #fdced742;
+  padding: 3px 6px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  margin-right: 2px;
+}
+
+.list-inline > .skill-tag {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+/* 
+================== */
+.interests {
+  margin-top: 2.2rem;
+}
+
+/* 
+=================== */
+.footer-wrapper {
+  margin-top: 4rem;
+}
+.footer-wrapper .footer-content {
+  margin: 0 auto;
+  max-width: 720px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.footer-wrapper footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+/* 
+==================== */
+.contacts {
+  margin-top: 1rem;
+}
+.contact a {
+  text-decoration: none;
+}
+
+/* 
+==================== */
+.about-wrapper {
+  margin-top: 3rem;
+}
+.about {
+  display: flex;
+  align-items: center;
+}
+.about .about-info {
+  order: 2;
+  margin-left: 1rem;
+}
+.about .about-info h2 {
+  margin-top: 0px;
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+}
+.about .about-info p {
+  font-size: 0.9rem;
+  margin: 0px;
+}
+.about .about-image {
+  order: 1;
+  height: auto;
+  max-width: 160px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(221, 221, 221);
+  border-image: initial;
+  padding: 4px;
+}
