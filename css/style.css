@@ -301,3 +301,7 @@ body {
   border-image: initial;
   padding: 4px;
 }
+
+article h2 {
+  color: #a63a50;
+}
